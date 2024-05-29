@@ -150,7 +150,17 @@ header.active nav {
 .heading h1 {
   font-size: 70px;
   margin-bottom: 40px;
-  word-break: keep-all;
+}
+.heading h1 span {
+  display: inline-block;
+  letter-spacing: -20px;
+}
+.heading h1 span.whitespace {
+  margin-right: 20px;
+}
+.heading h1 span.bundle {
+  display: block;
+  letter-spacing: -2px;
 }
 .heading p {
   font-size: 22px;
