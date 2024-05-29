@@ -1,5 +1,13 @@
 $(function(){
   
+  //fullpage
+  new fullpage('#fullpage', {
+    sectionSelector: '.section',
+    scrollOverflow: true,
+    navigation: true,
+    scrollingSpeed: 1000,
+  });
+  
   // Trigger
   $('.trigger').click(function(){
     $(this).toggleClass('active')
