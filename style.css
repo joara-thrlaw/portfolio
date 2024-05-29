@@ -196,7 +196,12 @@ header.active nav {
   word-break: keep-all;
 }
 .right-desc ul {
+  display: flex;
+  justify-content: space-around;
   font-size: 0;
+}
+.right-desc ul + ul {
+  margin-top: 10px;
 }
 .right-desc ul li {
   position: relative;
@@ -210,6 +215,9 @@ header.active nav {
   background-color: #eee;
   border-radius: 28%;
   margin-right: 15px;
+}
+.right-desc ul li.empty {
+  background-color: transparent;
 }
 .right-desc .hidden {
   overflow: hidden;
@@ -268,6 +276,10 @@ header.active nav {
 .right-desc ul .sketch {
   background-image: url("images/logo_sketch.png");
   background-size: 70%;
+}
+.right-desc ul .figma {
+  background-image: url("images/logo_figma.png");
+  background-size: 80%;
 }
 
 /* work Section */

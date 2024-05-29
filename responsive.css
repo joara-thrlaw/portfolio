@@ -1,3 +1,25 @@
+@media (max-width: 1300px) {
+  /* About Section */
+  .about .inner {
+    width: 100%;
+  }
+  .about-content {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .right-desc ul {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .heading h1 span.whitespace {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   /* Header */
   .banner {
@@ -93,10 +115,6 @@
   }
   
   /* About Section */
-  .about-content {
-    flex-direction: column;
-    padding: 50px 0;
-  }
   .about-content div {
     padding: 10px;
   }
