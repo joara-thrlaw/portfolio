@@ -62,6 +62,23 @@ $(function(){
     ]
   });
 
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-next-button",
+      prevEl: ".swiper-prev-button"
+    },
+    effect: "fade",
+    loop: "infinite",
+    pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          }
+  });
+  
+  swiper.on('slideChange', function(sld) {
+    document.querySelector(".work").setAttribute('data-sld', sld.realIndex);
+  })
+
   /* 롯데면세점 모달 html import  */
   if($('#lotte').length > 0) {
     document.getElementById("lotte-content").innerHTML='<object type="text/html" data="../modal.html"></object>'; 

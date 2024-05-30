@@ -1,5 +1,6 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -82,7 +83,6 @@ nav {
 .gnb {
   display: flex;
 }
-.gnb li {}
 .gnb li a {
   margin: 20px;
   color: #fff;
@@ -133,7 +133,6 @@ header.active nav {
   bottom: 20px;
   opacity: 1;
 }
-
 
 /* Intro */
 .intro {
@@ -282,87 +281,6 @@ header.active nav {
   background-size: 80%;
 }
 
-/* work Section */
-.work {
-  background-color: #f8f8f8;
-}
-.work-content {
-  padding: 100px 0;
-}
-.work-content h2 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-.item {
-  width: 390px;
-  height: 600px;
-  border-radius: 30px 0 30px 0;
-  background-color: #fff;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  margin: 0 20px;
-}
-.up-image {
-  width: 100%;
-  height: 285px;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.up-image.omron {
-  background-image: url('images/slide/omron.jpg');
-}
-.up-image.root {
-  background-image: url('images/slide/root.jpg');
-}
-.up-image.jt {
-  background-image: url('images/slide/jt.jpg');
-}
-.up-image.ips {
-  background-image: url('images/slide/ips.jpg');
-}
-.up-image.lotte {
-  background-image: url('images/slide/lotte.jpg');
-}
-.up-image.genesis {
-  background-image: url('images/slide/genesis.jpg');
-}
-.down-desc {
-  padding: 25px;
-  padding-top: 50px;
-}
-.down-desc h3 {
-  font-size: 22px;
-  margin: 15px 0;
-  /*letter-spacing: -1px;*/
-}
-.down-desc p {
-  font-size: 16px;
-}
-.btn-explore {
-  color: #c25a3a;
-  font-weight: 500;
-}
-.btn-explore img {
-  transition: 0.3s;
-}
-.btn-explore:hover img {
-  /*transform: translateX(15px);*/
-  margin-left: 15px;
-}
-.badge {
-  color: #fff;
-  padding: 2px 10px;
-  font-size: 16px;
-}
-.badge.must {
-  background-color: #e60012; 
-}
-.badge.good {
-  background-color: #00a0e9;
-}
-
 /* Work Detail Section */
 .before-btn {
     background: linear-gradient(45deg, #00b894, #55efc4);
@@ -477,15 +395,217 @@ footer {
   font-weight: 300;
 }
 
-/* 
-  슬릭 슬라이더의 버튼이 모바일 화면에서 미세하게 좌우로 위치해서 미세한 가로스크롤이 생깁니다. 이걸 방지하는 방법은 아래의 코드를 넣어주면 됩니다. 모바일에서 드래그를 하면 편하기 때문에 슬릭 슬라이더 버튼을 사용하지 않아도 됩니다. display: none 을 넣기 전에 border를 그려보시면 이해가 쉬우실 거에요. 물론 슬릭 슬라이더 버튼을 모바일에서 사용할거면 좌우 버튼을 안쪽으로 넣어주시면 됩니다.
-*/
-
-/* Slick.js */
-button.slick-arrow {
-  /* border: 1px solid #000; */
-  display: none !important;
+/* work Section */
+.work-content {
+  position: relative;
+  padding: 100px 0;
+}
+.work-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
+.badge {
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 16px;
+}
+.badge.must {
+  background-color: #e60012; 
+}
+.badge.good {
+  background-color: #00a0e9;
+}
+
+.mySwiper {
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+}
+.swiper-slide {
+  position: relative;
+	display: flex;
+	flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+	padding: 42px 0 30px;
+}
+.swiper-slide .main-title {
+  font-family: "EB Garamond", serif;
+  font-size: 100px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition-delay: 0.3s;
+}
+.swiper-slide .main-content .main-content__title {
+  font-size: 26px;
+  font-family: "EB Garamond", serif;;
+  font-style: italic;
+  line-height: normal;
+  margin-bottom: 14px;
+  transition-delay: 0.2s;
+}
+.swiper-slide .main-content .more-menu {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c2d2a;
+  display: flex;
+  align-items: center;
+  transition-delay: 0.4s;
+}
+.swiper-slide .main-content .more-menu svg {
+  width: 28px;
+  height: 18px;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+.swiper-slide .main-content .more-menu:hover svg {
+  margin-left: 20px;
+}
+.swiper-slide .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.swiper-slide .center {
+	display: flex;
+	position: relative;
+	flex-shrink: 0;
+}
+.swiper-slide .center .bottle-bg {
+  max-width: 850px;
+  width: 30vw;
+  object-fit: cover;
+  border-radius: 40% 60% 65% 35% / 40% 55% 35% 66%;
+}
+.swiper-slide .center .bottle-img {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transform: scale(1.6);
+}
+
+.swiper-pagination {
+	position: absolute;
+	right: 30px;
+	left: auto;
+	top: 100px;
+	width: auto;
+	bottom: auto;
+	z-index: 2;
+	font-size: 14px;
+	font-weight: 500;
+}
+.button-wrapper {
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.button-wrapper svg {
+  width: 28px;
+}
+.button-wrapper .swiper-button {
+  border: 1px solid #2c2d2a;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #2c2d2a 40%, transparent 0%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.swiper-button:hover {
+  background-color: #2c2d2a;
+  background-position: left bottom;
+}
+.swiper-button:hover svg {
+  stroke: #fff;
+}
+.button-wrapper .swiper-prev-button {
+  background: linear-gradient(to left, #2c2d2a 50%, transparent 0%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.3s ease-out;
+}
+.button-wrapper .swiper-prev-button svg {
+  transform: rotate(-180deg);
+}
+.button-wrapper .swiper-prev-button:hover {
+  background-position: right bottom;
+}
+.button-wrapper .swiper-button + .swiper-button {
+  margin-left: 16px;
+}
+
+
+.swiper-slide {
+	opacity: 0 !important;
+	transition: 0.4s;
+}
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+.swiper-slide .main-wrapper > *,
+.swiper-slide .main-content > * {
+	transform: translateY(-30px);
+	opacity: 0;
+	transition-duration: 0.8s;
+}
+.swiper-slide-active .main-wrapper > *,
+.swiper-slide-active .main-content > * {
+	transform: none;
+	opacity: 1;
+}
+.swiper-slide .bottle-bg {
+	transition-duration: 0.6s;
+	opacity: 0;
+	object-position: 60%;
+}
+.swiper-slide-active .bottle-bg {
+	opacity: 1;
+	transform: none;
+	object-position: 50%;
+}
+.swiper-slide .bottle-img {
+	transition-duration: 0.8s;
+	transform: scale(1.2);
+	opacity: 0;
+}
+.swiper-slide-active .bottle-img {
+	opacity: 1;
+	transform: scale(1.6);
+}
+
+.work {
+  background-color: #C2E1FE;
+}
+
+[data-sld="0"] {
+	background-color: #C2E1FE;
+}
+[data-sld="1"] {
+	background-color: #3EC2D7;
+}
+[data-sld="2"] {
+	background-color: #FFABBA;
+}
+[data-sld="3"] {
+	background-color: #FCBB79;
+}
+[data-sld="4"] {
+	background-color: #FE9907;
+}
+[data-sld="5"] {
+	background-color: #A8AEB1;
+}
 
 
