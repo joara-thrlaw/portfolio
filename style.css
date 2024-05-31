@@ -323,8 +323,15 @@ header.active nav {
   color: #e60012;
   margin-top: 15px;
 }
+.btn-explore {
+  color: #333;
+}
 .btn-explore img {
   margin-left: 5px;
+  transition: all 0.3s;
+}
+.btn-explore:hover img {
+  margin-left: 15px;
 }
 .img-wrap {
   text-align: center;
@@ -606,6 +613,9 @@ footer {
 }
 [data-sld="5"] {
 	background-color: #A8AEB1;
+}
+[data-sld="6"] {
+	background-color: #6D5947;
 }
 
 

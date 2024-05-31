@@ -118,6 +118,12 @@
   .heading p {
     padding: 0;
   }
+  .heading h1 span {
+    letter-spacing: -3vw;
+  }
+  .heading h1 span.bundle {
+    letter-spacing: 0;
+  }
   
   /* About Section */
   .about-content div {
